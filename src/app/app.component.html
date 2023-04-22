@@ -1,0 +1,18 @@
+
+
+  <div class="game-list">
+    <ul class="game" *ngFor="let game of games">
+      <li>
+        <div>
+          <img [src]="game.image_url" alt="Capa do jogo">
+          <ul>
+            <li class="name">{{ game.name }}</li>
+            <li class="description">{{ game.description }}</li>
+            <li class="developer">{{ game.developerdescription }}</li>
+            <li class="created_at">{{ game.created_at | date: 'dd/MM/yyyy' }}</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
